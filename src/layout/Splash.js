@@ -16,9 +16,11 @@ export function WithSplashScreen({ children }) {
 }
 
 const LOADING_IMAGE = 'Loading image';
+
 const FADE_IN_IMAGE = 'Fade in image';
 const WAIT_FOR_APP_TO_BE_READY = 'Wait for app to be ready';
 const FADE_OUT = 'Fade out';
+
 const HIDDEN = 'Hidden';
 const text = 'Zappt';
 
@@ -26,6 +28,8 @@ export const Splash = ({ isAppReady }) => {
   const containerOpacity = useRef(new Animated.Value(1)).current;
   const imageOpacity = useRef(new Animated.Value(0)).current;
   const imagePosition = useRef(new Animated.Value(-150)).current;
+
+  
   const ellipseScaled = useRef(new Animated.Value(1)).current;
   const ballPositionY = useRef(new Animated.Value(0)).current;
   const [state, setState] = useState(LOADING_IMAGE);
