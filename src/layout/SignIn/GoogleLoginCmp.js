@@ -15,6 +15,8 @@ const GoogleLoginCmp = ({ handleGoogleLogin }) => {
       androidClientId : ANDROID_GOOGLE_CLIENT_ID,
       scopes: ['profile', 'email', 'openid'],
     });
+
+    
   }, []);
   useEffect(() => {
     if(Platform.OS === "android" && clearGoogleAccount) {

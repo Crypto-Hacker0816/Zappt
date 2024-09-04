@@ -17,6 +17,8 @@ const FacebookLoginCmp = ({ handleGoogleLogin }) => {
   const signIn = async () => {
     if (!isSigninInProgress) {
       setIsSigninInProgress(true);
+
+
       try {
         await GoogleSignin.hasPlayServices();
         const userInfo = await GoogleSignin.signIn();
@@ -34,8 +36,8 @@ const FacebookLoginCmp = ({ handleGoogleLogin }) => {
       <Icon
         style={{ paddingHorizontal: 10 }}
         name="facebook"
-        size={20}
-        color="#4285F4"
+        size={22}
+        color="#4397F6"
         brand
       />
       <Text>Facebook</Text>
